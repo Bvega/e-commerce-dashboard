@@ -1,12 +1,15 @@
-import { NetworkError, DataError } from "./errors";
+// src/apiSimulator.ts
 
+import { NetworkError, DataError } from "./customErrors";
+
+// Define a reusable Product type
 export interface Product {
   id: number;
   name: string;
   price: number;
 }
 
-// ✅ Simulate fetching a product catalog
+// Simulate fetching a product catalog
 export const fetchProductCatalog = (): Promise<Product[]> => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -22,7 +25,7 @@ export const fetchProductCatalog = (): Promise<Product[]> => {
   });
 };
 
-// ✅ Simulate fetching reviews for a product
+// Simulate fetching reviews for a product
 export const fetchProductReviews = (productId: number): Promise<{ user: string; comment: string }[]> => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -38,7 +41,7 @@ export const fetchProductReviews = (productId: number): Promise<{ user: string; 
   });
 };
 
-// ✅ Simulate fetching a sales report
+// Simulate fetching a sales report
 export const fetchSalesReport = (): Promise<{ totalSales: number; unitsSold: number; averagePrice: number }> => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
