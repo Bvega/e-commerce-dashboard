@@ -37,7 +37,7 @@
 90C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\braces133932223861329824 1
 147C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-node\package.json133932223862555769 0
 104C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\lmdb\dependencies\v8133932223865581835 1
-75C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist133932254926032908 1
+75C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist133932740974013631 1
 118C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\type-fest\source\package-json.d.ts133932223862778590 0
 123C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\caniuse-lite\data\features\svg-html5.js133932223874600681 0
 103C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\browserslist\cli.js133932223858265802 0
@@ -2342,7 +2342,7 @@
 99C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\.bin\parcel.ps1133932223876924498 0
 134C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\core\test\fixtures\plugins\local-plugin.js133932223864965563 0
 123C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\caniuse-lite\data\features\dommatrix.js133932223868647150 0
-94C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\frontend-parcel\main.ts133932254922419314 0
+94C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\frontend-parcel\main.ts133932740721307496 0
 123C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\caniuse-lite\data\features\dragndrop.js133932223868667171 0
 116C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\packager-js\package.json133932223862599338 0
 129C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\caniuse-lite\data\features\element-closest.js133932223868757137 0
@@ -2983,7 +2983,7 @@
 124C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\esm\_to_consumable_array.js133932223866415800 0
 133C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\source-map\dist\wasm-bindings-web.js.flow133932223859457407 0
 117C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\esm\_to_primitive.js133932223866425919 0
-107C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.a7d9de2c.js.map133932254925820809 0
+107C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.a7d9de2c.js.map133932740974013631 0
 120C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\esm\_to_property_key.js133932223866435933 0
 131C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\esm\_ts_add_disposable_resource.js133932223866455908 0
 164C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-node\parcel_sourcemap_wasm_bg.wasm133932223864945512 0
@@ -3790,5 +3790,5 @@
 115C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\.bin\update-browserslist-db.cmd133932223876939562 0
 91C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\apiSimulator.js133932194044630121 0
 108C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.8d21883e.css.map133932254926022313 0
-103C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.a7d9de2c.js133932254925772059 0
+103C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.a7d9de2c.js133932740973946059 0
 86C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\index.html133932254925235147 0
