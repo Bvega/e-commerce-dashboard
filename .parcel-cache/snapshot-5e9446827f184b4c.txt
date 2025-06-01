@@ -67,7 +67,7 @@
 155C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\workers\test\integration\workerfarm\resolve-shared-reference.js133932223863128164 0
 91C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel133932223883115797 1
 122C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\cjs\_class_call_check.cjs133932223862312386 0
-80C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\README.md133932139241595566 0
+80C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\README.md133932723121443201 0
 115C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\caniuse-lite\data\regions\MG.js133932223872043070 0
 111C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\lightningcss\node\index.mjs133932223861913834 0
 97C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\node-releases133932223859657174 1
