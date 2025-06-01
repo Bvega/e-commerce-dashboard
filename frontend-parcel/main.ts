@@ -1,9 +1,11 @@
 import { fetchProductCatalog, fetchProductReviews, fetchSalesReport } from "../src/apiSimulator";
 
-// 1. Reference the HTML element where we will inject our UI
+// Output container for UI
 const output = document.getElementById("output")!;
 
-// 2. A function to create a card per product
+/**
+ * Create and display a product card
+ */
 const renderProductCard = (product: { id: number; name: string; price: number }) => {
   const card = document.createElement("div");
   card.className = "card";
@@ -15,7 +17,9 @@ const renderProductCard = (product: { id: number; name: string; price: number })
   output.appendChild(card);
 };
 
-// 3. A function to update the product card with fetched reviews
+/**
+ * Append fetched reviews into a product card
+ */
 const appendReviews = (productId: number, reviews: { user: string; comment: string }[]) => {
   const reviewsDiv = document.getElementById(`reviews-${productId}`)!;
   reviewsDiv.innerHTML = "<h3>Reviews:</h3>";
@@ -27,7 +31,22 @@ const appendReviews = (productId: number, reviews: { user: string; comment: stri
   });
 };
 
-// 4. Main app function: fetch products and their reviews
+/**
+ * Show a summarized sales report at the bottom
+ */
+const renderSalesReport = (report: { totalSales: number; unitsSold: number; averagePrice: number }) => {
+  const div = document.createElement("div");
+  div.className = "card";
+  div.innerHTML = `
+    <h2>Sales Report</h2>
+    <p><strong>Total Sales:</strong> $${report.totalSales}</p>
+    <p><strong>Units Sold:</strong> ${report.unitsSold}</p>
+    <p><strong>Average Price:</strong> $${report.averagePrice}</p>
+  `;
+  output.appendChild(div);
+};
+
+// Main application logic
 const main = async () => {
   try {
     const products = await fetchProductCatalog();
@@ -41,6 +60,17 @@ const main = async () => {
         reviewsDiv.innerHTML = `<p class="error">⚠️ Error loading reviews: ${error}</p>`;
       }
     });
+
+    try {
+      const report = await fetchSalesReport();
+      renderSalesReport(report);
+    } catch (error) {
+      const errDiv = document.createElement("div");
+      errDiv.className = "error";
+      errDiv.textContent = `⚠️ Error loading sales report: ${error}`;
+      output.appendChild(errDiv);
+    }
+
   } catch (error) {
     output.innerHTML = `<p class="error">Fatal Error: ${error}</p>`;
   }
