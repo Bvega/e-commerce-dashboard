@@ -1,79 +1,34 @@
-import { fetchProductCatalog, fetchProductReviews, fetchSalesReport } from "../src/apiSimulator";
-
-// Output container for UI
+// Get reference to the output container
 const output = document.getElementById("output")!;
 
 /**
- * Create and display a product card
+ * Renders a product card with basic information and a placeholder image.
+ * Includes an inner reviews container for future rendering of reviews.
  */
 const renderProductCard = (product: { id: number; name: string; price: number }) => {
   const card = document.createElement("div");
   card.className = "card";
+
+  // HTML structure includes a header section with text and image side-by-side
   card.innerHTML = `
-    <h2>${product.name}</h2>
-    <p><strong>Price:</strong> $${product.price}</p>
-    <div class="reviews" id="reviews-${product.id}">Loading reviews...</div>
+    <div class="product-header">
+      <div>
+        <h2>${product.name}</h2>
+        <p><strong>Price:</strong> $${product.price}</p>
+        <div class="reviews" id="reviews-${product.id}">Loading reviews...</div>
+      </div>
+      <img src="https://via.placeholder.com/100" alt="${product.name}" class="product-image" />
+    </div>
   `;
+
   output.appendChild(card);
 };
 
-/**
- * Append fetched reviews into a product card
- */
-const appendReviews = (productId: number, reviews: { user: string; comment: string }[]) => {
-  const reviewsDiv = document.getElementById(`reviews-${productId}`)!;
-  reviewsDiv.innerHTML = "<h3>Reviews:</h3>";
-  reviews.forEach((review) => {
-    const p = document.createElement("p");
-    p.className = "review";
-    p.textContent = `💬 ${review.user}: ${review.comment}`;
-    reviewsDiv.appendChild(p);
-  });
-};
+// Simulated product data for demo purposes
+const products = [
+  { id: 1, name: "Laptop", price: 1200 },
+  { id: 2, name: "Headphones", price: 200 }
+];
 
-/**
- * Show a summarized sales report at the bottom
- */
-const renderSalesReport = (report: { totalSales: number; unitsSold: number; averagePrice: number }) => {
-  const div = document.createElement("div");
-  div.className = "card";
-  div.innerHTML = `
-    <h2>Sales Report</h2>
-    <p><strong>Total Sales:</strong> $${report.totalSales}</p>
-    <p><strong>Units Sold:</strong> ${report.unitsSold}</p>
-    <p><strong>Average Price:</strong> $${report.averagePrice}</p>
-  `;
-  output.appendChild(div);
-};
-
-// Main application logic
-const main = async () => {
-  try {
-    const products = await fetchProductCatalog();
-    products.forEach(async (product) => {
-      renderProductCard(product);
-      try {
-        const reviews = await fetchProductReviews(product.id);
-        appendReviews(product.id, reviews);
-      } catch (error) {
-        const reviewsDiv = document.getElementById(`reviews-${product.id}`)!;
-        reviewsDiv.innerHTML = `<p class="error">⚠️ Error loading reviews: ${error}</p>`;
-      }
-    });
-
-    try {
-      const report = await fetchSalesReport();
-      renderSalesReport(report);
-    } catch (error) {
-      const errDiv = document.createElement("div");
-      errDiv.className = "error";
-      errDiv.textContent = `⚠️ Error loading sales report: ${error}`;
-      output.appendChild(errDiv);
-    }
-
-  } catch (error) {
-    output.innerHTML = `<p class="error">Fatal Error: ${error}</p>`;
-  }
-};
-
-main();
+// Render each product card
+products.forEach(renderProductCard);

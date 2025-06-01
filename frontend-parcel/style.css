@@ -1,18 +1,47 @@
 body {
   font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #f7f7f7;
+  padding: 1rem;
 }
 
+#output {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Basic card layout */
 .card {
-  background: white;
-  border: 1px solid #ddd;
-  padding: 16px;
-  margin-bottom: 20px;
+  background-color: #fff;
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
 }
 
+/* New layout for product info + image */
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Image placeholder styling */
+.product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Placeholder for reviews */
+.reviews {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Error messages */
 .error {
   color: red;
+  margin-top: 1rem;
 }
