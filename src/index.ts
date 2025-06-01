@@ -1,41 +1,42 @@
-import { fetchProductCatalog, fetchProductReviews, fetchSalesReport } from "./apiSimulator";
+import { fetchProductCatalog, fetchProductReviews, fetchSalesReport } from './apiSimulator';
+import { NetworkError, DataError } from './errors';
 
-// Entry point function
-const runDashboard = () => {
-  // Step 1: Fetch product catalog
-  fetchProductCatalog()
-    .then(products => {
-      console.log("✅ Products:", products);
+const testAPI = async () => {
+  try {
+    const products = await fetchProductCatalog();
+    console.log("✅ Product Catalog:", products);
 
-      // Step 2: Fetch reviews for each product
-      const reviewPromises = products.map(product =>
-        fetchProductReviews(product.id)
-          .then(reviews => {
-            console.log(`💬 Reviews for ${product.name}:`, reviews);
-          })
-          .catch(err => {
-            console.error(`⚠️ Error fetching reviews for ${product.name}:`, err);
-          })
-      );
+    for (const product of products) {
+      try {
+        const reviews = await fetchProductReviews(product.id);
+        console.log(`✅ Reviews for ${product.name}:`, reviews);
+      } catch (error) {
+        if (error instanceof NetworkError) {
+          console.error("🌐 Network error fetching reviews:", error.message);
+        } else {
+          console.error("⚠️ Unexpected error fetching reviews:", error);
+        }
+      }
+    }
 
-      // Step 3: After all reviews, fetch sales report
-      Promise.all(reviewPromises)
-        .then(() => {
-          return fetchSalesReport();
-        })
-        .then(report => {
-          console.log("📊 Sales Report:", report);
-        })
-        .catch(err => {
-          console.error("⚠️ Error fetching sales report:", err);
-        })
-        .finally(() => {
-          console.log("✅ All API calls attempted.");
-        });
-    })
-    .catch(err => {
-      console.error("❌ Fatal error fetching product catalog:", err);
-    });
+    try {
+      const report = await fetchSalesReport();
+      console.log("✅ Sales Report:", report);
+    } catch (error) {
+      if (error instanceof DataError) {
+        console.error("📊 Data error fetching sales report:", error.message);
+      } else {
+        console.error("⚠️ Unexpected error fetching sales report:", error);
+      }
+    }
+
+  } catch (error) {
+    if (error instanceof NetworkError) {
+      console.error("🌐 Network error fetching catalog:", error.message);
+    } else {
+      console.error("❌ Unexpected fatal error:", error);
+    }
+  }
 };
 
-runDashboard();
+testAPI();
