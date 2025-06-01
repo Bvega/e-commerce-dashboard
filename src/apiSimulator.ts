@@ -1,11 +1,12 @@
-// Define a Product type for strong typing
-export type Product = {
+import { NetworkError, DataError } from "./errors";
+
+export interface Product {
   id: number;
   name: string;
   price: number;
-};
+}
 
-// Simulate fetching a product catalog
+// ✅ Simulate fetching a product catalog
 export const fetchProductCatalog = (): Promise<Product[]> => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -15,13 +16,13 @@ export const fetchProductCatalog = (): Promise<Product[]> => {
           { id: 2, name: "Headphones", price: 200 },
         ]);
       } else {
-        reject("Failed to fetch product catalog");
+        reject(new NetworkError("Failed to fetch product catalog"));
       }
     }, 1000);
   });
 };
 
-// Simulate fetching reviews for a product
+// ✅ Simulate fetching reviews for a product
 export const fetchProductReviews = (productId: number): Promise<{ user: string; comment: string }[]> => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -31,13 +32,13 @@ export const fetchProductReviews = (productId: number): Promise<{ user: string; 
           { user: "Bob", comment: "Very satisfied." }
         ]);
       } else {
-        reject(`Failed to fetch reviews for product ID ${productId}`);
+        reject(new NetworkError(`Failed to fetch reviews for product ID ${productId}`));
       }
     }, 1500);
   });
 };
 
-// Simulate fetching a sales report
+// ✅ Simulate fetching a sales report
 export const fetchSalesReport = (): Promise<{ totalSales: number; unitsSold: number; averagePrice: number }> => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -48,7 +49,7 @@ export const fetchSalesReport = (): Promise<{ totalSales: number; unitsSold: num
           averagePrice: 200
         });
       } else {
-        reject("Failed to fetch sales report");
+        reject(new DataError("Failed to fetch sales report"));
       }
     }, 1000);
   });
