@@ -1,42 +1,54 @@
-import { fetchProductCatalog, fetchProductReviews, fetchSalesReport } from './apiSimulator';
-import { NetworkError, DataError } from './errors';
+// src/index.ts
+import {
+  fetchProductCatalog,
+  fetchProductReviews,
+  fetchSalesReport,
+} from "./apiSimulator";
+import { retryPromise } from "./retryPromise";
+import { NetworkError, DataError } from "./customErrors";
 
-const testAPI = async () => {
+// ✅ Helper to log results or errors
+const log = (label: string, data: any) => {
+  console.log(`✅ ${label}:`, data);
+};
+
+// ✅ Helper to log errors
+const logError = (label: string, error: any) => {
+  if (error instanceof NetworkError) {
+    console.error(`🌐 Network error ${label}:`, error.message);
+  } else if (error instanceof DataError) {
+    console.error(`📊 Data error ${label}:`, error.message);
+  } else {
+    console.error(`❌ Unknown error ${label}:`, error);
+  }
+};
+
+// ✅ Main async workflow using retry
+const main = async () => {
   try {
-    const products = await fetchProductCatalog();
-    console.log("✅ Product Catalog:", products);
+    const products = await retryPromise(() => fetchProductCatalog(), 3, 1000);
+    log("Product Catalog", products);
 
     for (const product of products) {
       try {
-        const reviews = await fetchProductReviews(product.id);
-        console.log(`✅ Reviews for ${product.name}:`, reviews);
-      } catch (error) {
-        if (error instanceof NetworkError) {
-          console.error("🌐 Network error fetching reviews:", error.message);
-        } else {
-          console.error("⚠️ Unexpected error fetching reviews:", error);
-        }
+        const reviews = await retryPromise(() => fetchProductReviews(product.id), 3, 1000);
+        log(`Reviews for ${product.name}`, reviews);
+      } catch (err) {
+        logError(`fetching reviews for ${product.name}`, err);
       }
     }
 
     try {
-      const report = await fetchSalesReport();
-      console.log("✅ Sales Report:", report);
-    } catch (error) {
-      if (error instanceof DataError) {
-        console.error("📊 Data error fetching sales report:", error.message);
-      } else {
-        console.error("⚠️ Unexpected error fetching sales report:", error);
-      }
+      const report = await retryPromise(() => fetchSalesReport(), 3, 1000);
+      log("Sales Report", report);
+    } catch (err) {
+      logError("fetching sales report", err);
     }
 
-  } catch (error) {
-    if (error instanceof NetworkError) {
-      console.error("🌐 Network error fetching catalog:", error.message);
-    } else {
-      console.error("❌ Unexpected fatal error:", error);
-    }
+  } catch (err) {
+    logError("overall application", err);
   }
 };
 
-testAPI();
+// 🔁 Run the app
+main();
