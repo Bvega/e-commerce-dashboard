@@ -129,3 +129,27 @@ node dist/main.js
 
 You now have a complete, modular, and type-safe product management backend simulation using modern TypeScript principles!
 
+---
+
+## 8️⃣ [Optional] Build a Frontend User Interface
+
+To make the project more interactive and visually appealing, a basic UI was added using HTML, CSS, and JavaScript.
+
+### 📁 Folder: `public/`
+
+| File         | Purpose                                  |
+|--------------|-------------------------------------------|
+| `index.html` | Input form to enter product ID            |
+| `app.js`     | Fetch product, calculate discount & tax   |
+| `style.css`  | Minimal styling for a clean layout        |
+
+### 🧪 How to Test
+
+1. Open `public/index.html` in your browser
+2. Enter a valid product ID (e.g., `1`)
+3. View the product’s details, discount, tax, and final price
+4. Errors are displayed gracefully if the product is not found
+
+---
+
+This UI works independently from the TypeScript build system, but re-implements the same core logic for calculation and API interaction.
