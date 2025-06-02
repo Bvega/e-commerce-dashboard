@@ -1,4 +1,4 @@
-Great! Here's a clean, professional `README.md` tailored specifically for your **SBA TypeScript & Advanced JavaScript project**.
+
 
 ---
 
@@ -43,6 +43,25 @@ sba-ecommerce/
 ---
 
 ## 🚀 Getting Started
+---
+
+## 🖥️ Optional UI
+
+This project includes a fully optional user interface built with plain HTML, CSS, and JavaScript to interact with the DummyJSON API and apply discount and tax calculations.
+
+### 📂 Located in: `public/`
+
+- `index.html` — Input field for product ID
+- `app.js` — Fetches product and calculates final price
+- `style.css` — Minimal and elegant design
+
+### 💡 How to Use
+
+1. Open `sba-ecommerce/public/index.html` in your browser
+2. Enter a valid product ID (e.g., 1–30)
+3. View detailed product info, calculated discount, tax, and final price
+
+This interface demonstrates practical application of your business logic on the frontend without requiring any build tools or frameworks.
 
 ### Prerequisites
 
