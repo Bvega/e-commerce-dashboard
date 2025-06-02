@@ -2,32 +2,28 @@ import { Product } from './models/Product.js';
 import { calculateDiscount } from './utils/discountCalculator.js';
 import { calculateTax } from './utils/taxCalculator.js';
 import { AppError, handleError } from './utils/errorHandler.js';
+import { fetchProductById } from './services/apiService.js';
 
-try {
-  const sampleProduct = new Product({
-    id: 1,
-    title: "Sample Phone",
-    description: "A test product used for demo purposes",
-    price: 500,
-    discountPercentage: 10,
-    rating: 4.5,
-    stock: 32,
-    brand: "TestBrand",
-    category: "electronics", // change to "groceries" to test tax logic
-    thumbnail: "https://example.com/thumb.jpg",
-    images: ["https://example.com/img1.jpg", "https://example.com/img2.jpg"]
-  });
+async function runApp() {
+  try {
+    // Fetch product data from API
+    const productData = await fetchProductById(1); // you can change the ID to test different products
 
-  sampleProduct.displayDetails();
+    // Create Product instance from API data
+    const product = new Product(productData);
 
-  const discount = calculateDiscount(sampleProduct.price, sampleProduct.discountPercentage);
-  const tax = calculateTax(sampleProduct.price, sampleProduct.category);
+    product.displayDetails();
 
-  console.log(`Calculated discount: $${discount}`);
-  console.log(`Calculated tax: $${tax}`);
+    const discount = calculateDiscount(product.price, product.discountPercentage);
+    const tax = calculateTax(product.price, product.category);
+    const finalPrice = product.price - discount + tax;
 
-  const finalPrice = sampleProduct.price - discount + tax;
-  console.log(`Final price after discount + tax: $${finalPrice.toFixed(2)}`);
-} catch (error) {
-  handleError(error);
+    console.log(`Calculated discount: $${discount}`);
+    console.log(`Calculated tax: $${tax}`);
+    console.log(`Final price after discount + tax: $${finalPrice.toFixed(2)}`);
+  } catch (error) {
+    handleError(error);
+  }
 }
+
+runApp();
