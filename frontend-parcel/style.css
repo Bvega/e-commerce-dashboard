@@ -15,8 +15,8 @@ body {
 
 .card {
   background: white;
-  border-radius: 6px;
-  padding: 1rem;
+  border-radius: 8px;
+  padding: 1.25rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -27,21 +27,26 @@ body {
 }
 
 .review {
-  background-color: #f0f8f0;
+  background-color: #eef8ee;
+  margin-top: 0.5rem;
   padding: 0.5rem;
-  border-left: 3px solid green;
-}
-
-.loading {
-  color: #888;
-  font-style: italic;
+  border-left: 4px solid green;
+  border-radius: 4px;
 }
 
 .error {
   background-color: #ffecec;
-  color: red;
+  color: #900;
+  margin-top: 0.5rem;
   padding: 0.5rem;
-  border-left: 3px solid darkred;
+  border-left: 4px solid darkred;
+  border-radius: 4px;
+}
+
+.loading {
+  text-align: center;
+  font-style: italic;
+  color: #666;
 }
 
 footer {
