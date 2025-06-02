@@ -1,5 +1,6 @@
 import { Product } from './models/Product.js';
 import { calculateDiscount } from './utils/discountCalculator.js';
+import { calculateTax } from './utils/taxCalculator.js';
 
 const sampleProduct = new Product({
   id: 1,
@@ -20,3 +21,9 @@ sampleProduct.displayDetails();
 const discount = calculateDiscount(sampleProduct.price, sampleProduct.discountPercentage);
 console.log(`Calculated discount: $${discount}`);
 console.log(`Price after discount (from method): $${sampleProduct.getPriceWithDiscount()}`);
+// After calculating discount
+const tax = calculateTax(sampleProduct.price, sampleProduct.category);
+console.log(`Calculated tax: $${tax}`);
+
+const finalPrice = sampleProduct.price - discount + tax;
+console.log(`Final price after discount + tax: $${finalPrice.toFixed(2)}`);
