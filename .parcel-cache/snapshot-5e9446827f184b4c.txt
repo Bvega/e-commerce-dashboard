@@ -1,4 +1,4 @@
-3798
+3800
 135C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\typescript\lib\tr\diagnosticMessages.generated.json133932106990271075 0
 132C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\packager-js\lib\ScopeHoistingPackager.js133932223862160423 0
 114C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\utils\src\TapStream.js133932223864415677 0
@@ -15,7 +15,7 @@
 90C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\braces133932223861329824 1
 147C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-node\package.json133932223862555769 0
 104C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\lmdb\dependencies\v8133932223865581835 1
-75C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist133932946870836176 1
+75C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist133932963870343163 1
 118C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\type-fest\source\package-json.d.ts133932223862778590 0
 134C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\COPYRIGHT133932223859390957 0
 127C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\_\_possible_constructor_return133932223868442647 1
@@ -84,7 +84,7 @@
 155C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\workers\test\integration\workerfarm\resolve-shared-reference.js133932223863128164 0
 91C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel133932223883115797 1
 122C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\cjs\_class_call_check.cjs133932223862312386 0
-80C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\README.md133932723121443201 0
+80C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\README.md133932968367221295 0
 115C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\caniuse-lite\data\regions\MG.js133932223872043070 0
 120C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\profiler\test\Tracer.test.js133932223861591836 0
 114C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\typescript\lib\lib.es2024.d.ts133932106991805551 0
@@ -107,7 +107,7 @@
 119C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\_\_to_consumable_array133932223868687156 1
 96C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\caniuse-lite133932223876591236 1
 109C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\utility-types\SECURITY.md133932223861935578 0
-82C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\TUTORIAL.md133932193174315534 0
+82C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\TUTORIAL.md133932971812012582 0
 125C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\typescript\lib\lib.esnext.collection.d.ts133932106992253678 0
 133C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\caniuse-lite\data\features\input-file-multiple.js133932223870723065 0
 119C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\msgpackr\dist\index-no-eval.cjs.map133932223863148289 0
@@ -135,7 +135,7 @@
 94C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\micromatch133932223858929092 1
 128C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\caniuse-lite\data\features\css-appearance.js133932223865668062 0
 116C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\msgpackr\dist\unpack-no-eval.cjs133932223859996023 0
-97C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\frontend-parcel\index.html133932862417214483 0
+97C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\frontend-parcel\index.html133932963869887353 0
 123C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\transformer-babel\lib\config.js133932223861103249 0
 121C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\_\_ts_param\package.json133932223868849562 0
 94C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\color-name133932223858818461 1
@@ -2989,7 +2989,7 @@
 124C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\esm\_to_consumable_array.js133932223866415800 0
 133C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\source-map\dist\wasm-bindings-web.js.flow133932223859457407 0
 117C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\esm\_to_primitive.js133932223866425919 0
-107C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.a7d9de2c.js.map133932946870768687 0
+107C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.a7d9de2c.js.map133932963722807209 0
 120C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\esm\_to_property_key.js133932223866435933 0
 131C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\esm\_ts_add_disposable_resource.js133932223866455908 0
 164C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-node\parcel_sourcemap_wasm_bg.wasm133932223864945512 0
@@ -3011,7 +3011,7 @@
 133C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\cjs\_check_private_redeclaration.cjs133932223861924169 0
 132C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\cjs\_class_apply_descriptor_get.cjs133932223862094311 0
 139C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\cjs\_class_check_private_static_access.cjs133932223862397246 0
-104C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.8d21883e.css133932946870708709 0
+104C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.8d21883e.css133932963722848107 0
 149C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\cjs\_class_check_private_static_field_descriptor.cjs133932223862482732 0
 136C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\cjs\_class_extract_field_descriptor.cjs133932223862542412 0
 126C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@swc\helpers\cjs\_class_name_tdz_error.cjs133932223862626824 0
@@ -3112,7 +3112,7 @@
 98C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\logger133932223859509697 1
 145C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\transformer-react-refresh-wrap\src\helpers\helpers.js133932223859060087 0
 105C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\optimizer-css133932223859150172 1
-96C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\frontend-parcel\style.css133932946869232010 0
+96C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\frontend-parcel\style.css133932963720185037 0
 107C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\optimizer-image133932223858315798 1
 105C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\optimizer-swc133932223859037923 1
 107C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\@parcel\package-manager133932223863621882 1
@@ -3782,6 +3782,7 @@
 98C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\.bin\json5.ps1133932223876924498 0
 121C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\.bin\node-gyp-build-optional-packages133932223876924498 0
 126C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\.bin\node-gyp-build-optional-packages-test133932223876924498 0
+103C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.ac49f2e4.js133932956528564354 0
 130C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\.bin\node-gyp-build-optional-packages-test.cmd133932223876924498 0
 95C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\.bin\parcel133932223876939562 0
 99C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\.bin\parcel.cmd133932223876924498 0
@@ -3794,6 +3795,7 @@
 101C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\.bin\tsserver.cmd133932106992768622 0
 115C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\node_modules\.bin\update-browserslist-db.cmd133932223876939562 0
 91C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\apiSimulator.js133932194044630121 0
-108C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.8d21883e.css.map133932946870728634 0
-103C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.a7d9de2c.js133932946870728634 0
-86C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\index.html133932946870826164 0
+108C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.8d21883e.css.map133932963722877214 0
+103C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.a7d9de2c.js133932963722777216 0
+107C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\frontend-parcel.ac49f2e4.js.map133932956528614408 0
+86C:\Users\boliv\OneDrive\Desktop\2025-RTT-23\mod-6\e-commerce-dashboard\dist\index.html133932963870343163 0

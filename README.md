@@ -1,75 +1,65 @@
 # E-Commerce Dashboard
 
-## 🧪 Lab 2: Promises and Error Handling
+A simulated e-commerce dashboard built in TypeScript demonstrating asynchronous operations, error handling, and retry mechanisms. It includes a basic frontend powered by Parcel.
 
-This project simulates an e-commerce dashboard that fetches data from various APIs, including a product catalog, user reviews, and a sales report. It demonstrates effective error handling strategies using Promises in TypeScript.
+## 🚀 Features
 
-### ✅ Features
+- Fetches product catalog, reviews, and sales report using Promises
+- Custom error handling with retry logic
+- Frontend interface that displays:
+  - Product list
+  - Product reviews
+  - Sales report
+- Enhancements include:
+  - Loading indicators for async operations
+  - Styled review blocks and error messages
+  - A footer for attribution
 
-- Simulated APIs (`fetchProductCatalog`, `fetchProductReviews`, `fetchSalesReport`)
-- Custom error classes: `NetworkError`, `DataError`
-- Retry mechanism using `retryPromise`
-- Graceful error handling with `.catch()` and `.finally()`
-- Thorough logging of asynchronous flows
+## 🛠 Tech Stack
 
-### 📁 Backend Structure
+- TypeScript
+- Parcel (for frontend bundling)
+- HTML & CSS
+- Git & GitHub for version control
+
+## 📁 Project Structure
 
 ```
-src/
-├── index.ts              # Main orchestration logic
-├── apiSimulator.ts       # Fake async API calls with error simulation
-├── retryPromise.ts       # Retry utility using recursion
-├── customErrors.ts       # Custom error class definitions
-├── errors.ts             # Optional constants or helpers
+e-commerce-dashboard/
+├── src/
+│   ├── index.ts              # Backend orchestration logic
+│   ├── retryPromise.ts       # Retry utility for Promises
+│   ├── customErrors.ts       # Custom error classes
+│   └── dataErrors.ts         # Data-specific error utilities
+├── frontend-parcel/
+│   ├── main.ts               # Frontend logic using DOM manipulation
+│   ├── index.html            # HTML structure
+│   ├── style.css             # CSS styles
+│   └── assets/               # Images and media
+├── dist/                     # Compiled TypeScript output
+├── package.json
+├── tsconfig.json
+└── README.md
 ```
 
-### 🛠️ Getting Started
-
-Install dependencies and run the backend logic:
+## 📦 Installation & Usage
 
 ```bash
+# Install dependencies
 npm install
+
+# Build backend logic
 npm run build
+
+# Run the backend simulation
 npm start
-```
 
----
-
-## 🌐 Optional Frontend: Parcel + TypeScript
-
-The `frontend-parcel/` folder contains a simple UI built with Parcel to visually display the catalog and error messages.
-
-### 🔧 Features
-
-- Basic DOM rendering using TypeScript
-- Retry logic integrated in UI (`retryPromise`)
-- Styling with `style.css`
-- Built with Parcel
-
-### 📁 Frontend Structure
-
-```
-frontend-parcel/
-├── index.html            # Entry HTML with <script type="module">
-├── main.ts               # UI rendering + error handling logic
-├── style.css             # Basic CSS for cards and error messages
-```
-
-### ▶️ Run Frontend
-
-```bash
+# Start the frontend development server
 npm run dev
 ```
 
-Open [http://localhost:1234](http://localhost:1234) to view the dashboard.
+## ✅ Final Version
 
----
+Tag: `v1.0.0`
 
-## 📚 Educational Value
-
-This project demonstrates:
-
-- Understanding of Promise chaining and error management
-- Reusable error patterns and custom error typing
-- Resilience via retries
-- Separation of backend logic and optional UI layer
+This version completes the Lab 2 requirements with frontend enhancements.
