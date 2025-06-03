@@ -99,6 +99,30 @@ node dist/main.js
 * [DummyJSON Products API](https://dummyjson.com/products)
 
 ---
+---
+
+## 🖥️ Optional UI
+
+This project includes an optional web interface built using plain HTML, CSS, and JavaScript. It allows users to input a product ID, fetch real product data from the DummyJSON API, and view pricing with discount and tax applied.
+
+### 📂 Located in: `docs/`
+
+GitHub Pages is configured to serve from this folder.
+
+### 🔗 Live UI Demo
+
+👉 [Click here to view the UI](https://bvega.github.io/e-commerce-dashboard/)  
+*(GitHub Pages served from `assesment/sba-typescript-ecommerce/docs/`)*
+
+### 🧪 How to Use
+
+1. Open the UI link above, or open `docs/index.html` in your browser.
+2. Enter a valid product ID (e.g., `1`)
+3. View the product's details, calculated discount, tax, and final price
+
+This interface demonstrates how core business logic from the TypeScript project can be re-applied client-side for interactive use.
+
+
 
 ## 👨‍🎓 Author
 

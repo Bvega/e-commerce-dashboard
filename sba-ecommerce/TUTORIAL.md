@@ -131,25 +131,30 @@ You now have a complete, modular, and type-safe product management backend simul
 
 ---
 
+---
+
 ## 8️⃣ [Optional] Build a Frontend User Interface
 
-To make the project more interactive and visually appealing, a basic UI was added using HTML, CSS, and JavaScript.
+To make the project interactive and browser-accessible, a basic UI was implemented using HTML, CSS, and JavaScript.
 
-### 📁 Folder: `public/`
+### 📁 Folder: `docs/`
 
-| File         | Purpose                                  |
-|--------------|-------------------------------------------|
-| `index.html` | Input form to enter product ID            |
-| `app.js`     | Fetch product, calculate discount & tax   |
-| `style.css`  | Minimal styling for a clean layout        |
+This folder is used for GitHub Pages deployment.
+
+| File        | Purpose                                  |
+|-------------|-------------------------------------------|
+| `index.html`| Form to input a product ID               |
+| `app.js`    | Handles API fetching, discount, tax logic|
+| `style.css` | Simple and elegant styling               |
 
 ### 🧪 How to Test
 
-1. Open `public/index.html` in your browser
-2. Enter a valid product ID (e.g., `1`)
-3. View the product’s details, discount, tax, and final price
-4. Errors are displayed gracefully if the product is not found
+1. Open `docs/index.html` in your browser
+2. Or visit the GitHub Pages link (see `README.md`)
+3. Enter a product ID like `1` to fetch and calculate
+4. Errors are shown if the product ID is invalid
 
----
+This replicates key business logic from the backend in a standalone, frontend-native experience.
 
-This UI works independently from the TypeScript build system, but re-implements the same core logic for calculation and API interaction.
+
+
